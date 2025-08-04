@@ -196,19 +196,10 @@ We love contributions! Here’s how you can help make this project even better:
 
 ## 🏆 Developers
 
-<p align="center">
-  <a href="https://github.com/POORNA-github" style="text-decoration: none;">
-    <img src="https://github.com/POORNA-github.png" width="70" height="70" style="border-radius: 50%;" alt="POORNA-github"/>
-    <br>
-    <sub><b>POORNA-github</b></sub>
-  </a>
-  &nbsp; &nbsp; &nbsp;
-  <a href="https://github.com/Disira" style="text-decoration: none;">
-    <img src="https://github.com/Disira.png" width="70" height="70" style="border-radius: 50%;" alt="Disira"/>
-    <br>
-    <sub><b>Disira</b></sub>
-  </a>
-</p>
+[![Contributors](https://contrib.rocks/image?repo=POORNA-github/FurniScanAI)](https://github.com/POORNA-github/FurniScanAI/graphs/contributors)
+
+- [POORNA-github](https://github.com/POORNA-github)
+- [Disira](https://github.com/Disira)
 
 ## 🙏 Acknowledgements
 
