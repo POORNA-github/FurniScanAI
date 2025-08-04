@@ -100,9 +100,6 @@ FurniScan AI brings together the latest in AI, web development, and user experie
 
 ## 🖼️ Screenshots
 
-> **How to add your screenshots:**  
-> Place your images in a `screenshots` folder in your repo, then reference them below.
-
 <p align="center">
   <img src="screenshots/homepage.png" alt="FurniScan Homepage" width="700"/>
   <br>
@@ -139,7 +136,6 @@ flowchart TD
     style C fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#bfb,stroke:#333,stroke-width:2px
     style G fill:#ffb,stroke:#333,stroke-width:2px
-```
 ---
 
 ## 🤝 Contributing
