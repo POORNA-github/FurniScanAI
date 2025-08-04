@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://your-vercel-app-url.vercel.app"><img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=vercel" alt="Live Demo"></a>
+  <a href="https://your-vercel-app-url.vercel.app"><img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=vercel" alt="https://furni-scan-ai.vercel.app/"></a>
   <a href="https://github.com/POORNA-github/FurniScanAI"><img src="https://img.shields.io/github/stars/POORNA-github/FurniScanAI?style=flat-square" alt="GitHub stars"></a>
   <a href="https://github.com/POORNA-github/FurniScanAI/issues"><img src="https://img.shields.io/github/issues/POORNA-github/FurniScanAI?style=flat-square" alt="GitHub issues"></a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
