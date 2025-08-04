@@ -24,9 +24,9 @@
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Roboflow-101010?style=for-the-badge&logo=roboflow&logoColor=white" alt="Roboflow" />
+  <img src="https://img.shields.io/badge/Cohere-000000?style=for-the-badge&logo=cohere&logoColor=white" alt="Cohere" />
   <img src="https://img.shields.io/badge/jsPDF-FFB300?style=for-the-badge&logo=javascript&logoColor=white" alt="jsPDF" />
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
 
@@ -54,9 +54,9 @@
 - **jsPDF:** Allows users to export detailed, visually rich PDF reports of detected damages and cost breakdowns.
 - **Vercel:** Handles seamless cloud deployment, ensuring the app is always available, fast, and secure.
 
----
-
 FurniScan AI brings together the latest in AI, web development, and user experience to make furniture damage assessment effortless, accurate, and accessible to everyone.
+
+---
 
 ## 🧩 Key Components
 
@@ -68,40 +68,40 @@ FurniScan AI brings together the latest in AI, web development, and user experie
 | `AnalysisCanvas`         | Visualizes detected damages on images                | Bounding boxes, zoom, pan                     |
 | `ResultsPanel`           | Displays detection results and cost breakdown        | Material/labor cost, export to PDF            |
 | `SettingsDialog`         | User configuration for costs and preferences         | Editable rates, persistent settings           |
-| `ChatAssistant`          | AI-powered chatbot for user support                  | Gemini integration, prevention tips           |
+| `ChatAssistant`          | AI-powered chatbot for user support                  | Cohere integration, prevention tips           |
 | `HistoryViewer`          | Shows previous scans and reports                     | List, view, delete, export                    |
 | `PDFExporter`            | Generates downloadable PDF reports                   | Customizable, includes images and results     |
 | `Sidebar`                | Navigation and quick actions                         | New scan, history, settings                   |
 
+---
+
 ## 🎨 Styling System
 
-- **CSS Variables:** Dynamic theming support
-- **Responsive Design:** Mobile-first approach
-- **Modern Gradients:** Professional visual appeal
-- **Accessibility:** WCAG 2.1 AA compliant
+| Feature                | Description                                         |
+|------------------------|-----------------------------------------------------|
+| **CSS Variables**      | Dynamic theming support for easy color and style changes |
+| **Tailwind CSS**       | Utility-first styling for rapid UI development      |
+| **Responsive Design**  | Mobile-first approach for seamless experience across devices |
+| **Modern Gradients**   | Professional visual appeal with smooth color transitions |
+| **Accessibility**      | WCAG 2.1 AA compliant for inclusive user experience |
 
 ---
 
-## ✨ Features
+## 🛠️ Tech Stack
 
-- 🔍 **AI-Powered Damage Detection**  
-  Instantly detect scratches, cracks, and other damages in wooden furniture using advanced computer vision.
-
-- 🖼️ **Easy Image Upload**  
-  Upload photos of your furniture and get instant analysis.
-
-- 📄 **Automated Damage Reports**  
-  Generate downloadable PDF reports with detected damages and recommendations.
-
-- 💬 **Chatbot Assistant**  
-  Get real-time support and answers to your questions.
-
-- 📊 **History & Insights**  
-  View previous scans and track damage trends over time.
+- **Frontend:** React, TypeScript
+- **Styling:** Tailwind CSS, CSS Variables
+- **AI Model:** Roboflow API (rfdetr-nano for damage detection)
+- **Chatbot:** Cohere (AI-powered conversational assistant)
+- **PDF Generation:** jsPDF
+- **Deployment:** Vercel
 
 ---
 
 ## 🖼️ Screenshots
+
+> **How to add your screenshots:**  
+> Place your images in a `screenshots` folder in your repo, then reference them below.
 
 <p align="center">
   <img src="screenshots/homepage.png" alt="FurniScan Homepage" width="700"/>
@@ -120,69 +120,96 @@ FurniScan AI brings together the latest in AI, web development, and user experie
   <br>
   <em>Downloadable PDF damage report</em>
 </p>
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React, TypeScript
-- **Styling:** Tailwind CSS, CSS Variables
-- **AI Model:** Roboflow API (for damage detection)
-- **Chatbot:** Cohere Command-R Plus model  (AI-powered conversational assistant)
-- **PDF Generation:** jsPDF
-- **Deployment:** Vercel
 
 ---
-## 🔧 Development
 
-FurniScan AI is built for easy local development and production deployment.  
-Below are the most useful scripts you can run in your project:
+##🗺️ System Diagram
+mermaid
 
-## 📋 Available Scripts
+flowchart TD
+    A[User uploads furniture image] --> B[React Frontend]
+    B --> C[Image sent to Roboflow rfdetr-nano Model API]
+    C --> D[AI returns detected damages]
+    D --> E[Frontend displays bounding boxes & results]
+    E --> F[User can chat with Cohere Chatbot]
+    E --> G[User can generate PDF report (jsPDF)]
+    F --> H[Chatbot provides prevention tips, answers, etc.]
+    G --> I[Downloadable PDF with results & cost analysis]
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+    style G fill:#ffb,stroke:#333,stroke-width:2px
 
-| Script                | Description                                      |
-|-----------------------|--------------------------------------------------|
-| `npm start`           | Runs the app in development mode with hot reload |
-| `npm run build`       | Builds the app for production to the `build` folder |
-| `npm run lint`        | Runs ESLint to check code quality and style      |
-| `npm run type-check`  | Checks TypeScript types (if applicable)          |
-| `npm run analyze`     | Analyzes the production bundle size (optional)   |
+##📋 Available Scripts
+Script	Description
+npm start	Runs the app in development mode with hot reload
+npm run build	Builds the app for production to the build folder
+npm run lint	Runs ESLint to check code quality and style
+npm run type-check	Checks TypeScript types (if applicable)
+npm run analyze	Analyzes the production bundle size (optional)
+🤝 Contributing
+We love contributions! Here’s how you can help make this project even better:
 
-### Example Usage
-
-```bash
-# Start development server
-npm start
-
-# Build for production
-npm run build
-
-# Lint your code
-npm run lint
-
-# Type-check your code
-npm run type-check
-
-# Analyze bundle size
-npm run analyze
-
-
-## 🚦 Quick Start
-
-```bash
-git clone https://github.com/POORNA-github/FurniScanAI.git
-cd FurniScanAI
-npm install
-Set up environment variables:
-Create a .env file in the root directory and add your API keys and URLs, for example:
-
-env
-
-REACT_APP_ROBOFLOW_API_URL=your_roboflow_api_url
-REACT_APP_COHERE_API_KEY=your_cohere_api_key
-Run the app locally:
+🌟 Ways to Contribute
+🐛 Bug Reports: Found an issue? Open a bug report
+✨ Feature Requests: Have an idea? Suggest a feature
+📖 Documentation: Improve docs, add examples, fix typos
+🎨 UI/UX: Enhance design, improve accessibility
+🧠 AI Models: Help improve detection accuracy
+🌍 Translations: Add support for more languages
+🚀 Development Process
+🍴 Fork the Repository
 
 Bash
 
-npm start
-Open http://localhost:3000 in your browser to use FurniScan AI.
+git clone https://github.com/POORNA-github/FurniScanAI.git
+🌿 Create a Feature Branch
+
+Bash
+
+git checkout -b feature/amazing-new-feature
+💻 Make Your Changes
+
+Follow the existing code style
+Add tests if applicable
+Update documentation
+✅ Test Your Changes
+
+Bash
+
+npm start      # Test locally
+npm run build  # Verify production build
+npm run lint   # Check code quality
+📝 Commit Your Changes
+
+Bash
+
+git commit -m "✨ Add amazing new feature"
+🚀 Push and Create PR
+
+Bash
+
+git push origin feature/amazing-new-feature
+Open a Pull Request on GitHub
+📋 Development Guidelines
+Code Style: Follow existing patterns and ESLint rules
+Commits: Use conventional commit messages
+Documentation: Update README and inline docs
+Testing: Verify functionality before submitting
+🏆 Contributors
+Thanks to everyone who has contributed to FurniScan AI!
+<a href="https://github.com/POORNA-github/FurniScanAI/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=POORNA-github/FurniScanAI" />
+</a>
+
+📄 License
+MIT
+
+🙏 Acknowledgements
+Roboflow for the AI detection API
+Cohere for the conversational AI
+React
+Vercel
+All contributors and users!
+<p align="center"> <b>Made with ❤️ by Poorna Lakmal</b> </p> ```
 
