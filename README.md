@@ -193,3 +193,19 @@ We love contributions! Here’s how you can help make this project even better:
 - **Testing:** Verify functionality before submitting
 
 ---
+
+## 🏆 Contributors
+
+Thanks to everyone who has contributed to FurniScan AI!
+
+[![Contributors](https://contrib.rocks/image?repo=POORNA-github/FurniScanAI)](https://github.com/POORNA-github/FurniScanAI/graphs/contributors)
+
+---
+
+## 🙏 Acknowledgements
+
+- [Roboflow](https://roboflow.com/) for the AI detection API  
+- [Cohere](https://cohere.com/) for the conversational AI  
+- [React](https://reactjs.org/)  
+- [Vercel](https://vercel.com/)  
+- All contributors and users!
