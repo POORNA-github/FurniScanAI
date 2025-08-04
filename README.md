@@ -123,9 +123,21 @@ FurniScan AI brings together the latest in AI, web development, and user experie
 
 ---
 
-## 🚦 Quick Start
+## 🗺️ System Diagram
 
-```bash
-git clone https://github.com/POORNA-github/FurniScanAI.git
-cd FurniScanAI
-npm install
+```mermaid
+flowchart TD
+    A[User uploads furniture image] --> B[React Frontend]
+    B --> C[Image sent to Roboflow rfdetr-nano Model API]
+    C --> D[AI returns detected damages]
+    D --> E[Frontend displays bounding boxes & results]
+    E --> F[User can chat with Cohere Chatbot]
+    E --> G[User can generate PDF report (jsPDF)]
+    F --> H[Chatbot provides prevention tips, answers, etc.]
+    G --> I[Downloadable PDF with results & cost analysis]
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+    style G fill:#ffb,stroke:#333,stroke-width:2px
+
+---
