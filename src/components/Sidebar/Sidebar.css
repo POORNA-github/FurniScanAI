@@ -1,0 +1,505 @@
+.wooder-sidebar {
+  position: relative;
+  width: 216px;
+  min-width: 56px;
+  background: #fff;
+  border-right: 1.5px solid #eceff1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  transition: width 0.2s, background 0.2s, color 0.2s;
+  z-index: 2;
+}
+.wooder-sidebar.dark {
+  background: #23272a;
+  color: #fff;
+}
+.wooder-sidebar.collapsed {
+  width: 56px !important;
+  min-width: 56px !important;
+  max-width: 56px !important;
+  overflow: hidden;
+}
+.wooder-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 1.04rem;
+  font-weight: 700;
+  padding: 19px 14px 10px 14px;
+  color: #8b5c2a;
+  letter-spacing: 0.8px;
+  position: relative;
+  margin-top: 10px;
+}
+.wooder-sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+}
+
+.app-layout.dark .wooder-sidebar-title {
+  color: #fff;
+}
+.wooder-sidebar-collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 2px 2px 8px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 1px;
+}
+.wooder-sidebar.collapsed .wooder-sidebar-title,
+.wooder-sidebar.collapsed .wooder-sidebar-dropdown,
+.wooder-sidebar.collapsed .wooder-sidebar-nav,
+.wooder-sidebar.collapsed .wooder-sidebar-section,
+.wooder-sidebar.collapsed .wooder-sidebar-card,
+.wooder-sidebar.collapsed .wooder-sidebar-footer {
+  display: none !important;
+}
+.wooder-sidebar.collapsed .wooder-sidebar-header {
+  justify-content: flex-end;
+}
+.wooder-sidebar-btn {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 6px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+.wooder-sidebar-btn:hover {
+  background: #f1f5f9;
+}
+.wooder-sidebar-section {
+  padding: 0 14px 0 14px;
+}
+.wooder-sidebar-section-title {
+  font-size: 0.76rem;
+  color: #888;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.wooder-sidebar-chat {
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  transition: background 0.15s;
+}
+.wooder-sidebar-chat.active {
+  background: #e0e7ef;
+  font-weight: 600;
+}
+.wooder-sidebar.dark .wooder-sidebar-chat,
+.wooder-sidebar.dark .wooder-sidebar-chat.new-chat {
+  background: #23272a;
+  color: #fff;
+}
+.wooder-sidebar.dark .wooder-sidebar-chat.active {
+  background: #181a1b;
+  color: #fff;
+}
+.wooder-sidebar-chat.new-chat {
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  transition: background 0.15s;
+  justify-content: center;
+}
+.wooder-sidebar-chat.new-chat:hover {
+  background: #e0e7ef;
+}
+.wooder-sidebar.dark .wooder-sidebar-chat.new-chat {
+  background: #23272a;
+  color: #fff;
+}
+.wooder-sidebar-chat-icon {
+  font-size: 0.8rem;
+  margin-right: 4px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+.wooder-sidebar-delete-btn {
+  background: none;
+  border: none;
+  padding: 0 2px 0 0;
+  margin-right: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
+  transition: background 0.15s;
+}
+.wooder-sidebar-delete-btn:hover svg path,
+.wooder-sidebar-delete-btn:hover svg rect {
+  stroke: #b71c1c;
+}
+.wooder-sidebar-delete-btn svg {
+  display: block;
+}
+.wooder-sidebar-card {
+  background: #fff;
+  border: 1.5px solid #eceff1;
+  border-radius: 10px;
+  margin: 26px 14px 0 14px;
+  padding: 10px 10px 8px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  position: sticky;
+  top: 300px;
+  z-index: 2;
+}
+.wooder-sidebar-card.dark-card {
+  background: #313338;
+  border-color: #313338;
+  color: #fff;
+}
+.wooder-sidebar-card-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.wooder-sidebar-card-label {
+  background: #ffe6a7;
+  color: #b47a00;
+  font-size: 0.68rem;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.wooder-sidebar-card-title {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+.wooder-sidebar-card-desc {
+  font-size: 0.76rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+.wooder-sidebar.dark .wooder-sidebar-card-desc,
+.wooder-sidebar-card.dark-card .wooder-sidebar-card-desc {
+  color: #fff;
+}
+.wooder-sidebar-card-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 13px;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.wooder-sidebar-card-hide {
+  width: 100%;
+  background: #fafbfc;
+  border: 1.5px solid #eceff1;
+  color: #222;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  padding: 8px 0;
+  margin-top: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border 0.15s;
+  font-family: inherit;
+  font-weight: 500;
+  gap: 6px;
+}
+.wooder-sidebar-card-hide:hover {
+  background: #f1f5f9;
+  border-color: #d1d5db;
+}
+.wooder-sidebar.dark .wooder-sidebar-card-hide {
+  background: #23272a;
+  color: #fff;
+  border-color: #313338;
+}
+.wooder-sidebar.dark .wooder-sidebar-card-hide:hover {
+  background: #181a1b;
+  border-color: #23272a;
+}
+.wooder-sidebar-footer {
+  margin-top: auto;
+  padding: 14px 14px 8px 14px;
+  font-size: 0.76rem;
+  color: #888;
+}
+.wooder-sidebar-footer-btn {
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wooder-sidebar-footer-links {
+  display: flex;
+  gap: 8px;
+  font-size: 0.74rem;
+  margin-top: 6px;
+}
+.wooder-sidebar-footer-links a {
+  color: #bbb;
+  text-decoration: none;
+}
+.wooder-sidebar-footer-links a:hover {
+  text-decoration: underline;
+}
+.wooder-sidebar-bw-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Remove width/height if set previously */
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 1.5rem;
+}
+
+.theme-switch input:checked + .slider {
+  background: #222;
+}
+
+.theme-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: black;
+  filter: grayscale(100%) brightness(0);
+  user-select: none;
+}
+
+.theme-icon.sun {
+  color: white;
+  filter: grayscale(100%) brightness(2);
+}
+
+.theme-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 100px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 110%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.theme-switch.show-tooltip .theme-tooltip,
+.theme-switch:hover .theme-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.wooder-sidebar-history-list {
+  max-height: 120px; /* Adjust this to fit 4 items + some padding */
+  overflow-y: auto;
+  margin-bottom: 16px;
+  /* Optional: smooth scroll */
+  scroll-behavior: smooth;
+  /* Optional: hide scrollbar for webkit browsers */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f0f0f0;
+}
+.wooder-sidebar-history-list::-webkit-scrollbar {
+  width: 6px;
+}
+.wooder-sidebar-history-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+.wooder-sidebar-chat-delete:hover svg {
+  stroke: #e74c3c;
+}
+.confirm-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.confirm-dialog {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 28px 24px 20px 24px;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  animation: fadeIn 0.2s;
+}
+
+.confirm-dialog-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.confirm-dialog-message {
+  color: #444;
+  margin-bottom: 22px;
+}
+
+.confirm-dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.confirm-dialog-cancel,
+.confirm-dialog-delete {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.confirm-dialog-cancel {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.confirm-dialog-cancel:hover {
+  background: #e0e0e0;
+}
+
+.confirm-dialog-delete {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.confirm-dialog-delete:hover {
+  background: #c0392b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Dark mode for confirm dialog */
+.app-layout.dark .confirm-dialog {
+  background: #23272a;
+  color: #fff;
+}
+
+.app-layout.dark .confirm-dialog-title {
+  color: #fff;
+}
+
+.app-layout.dark .confirm-dialog-message {
+  color: #bbb;
+}
+
+.app-layout.dark .confirm-dialog-cancel {
+  background: #313338;
+  color: #fff;
+}
+
+.app-layout.dark .confirm-dialog-cancel:hover {
+  background: #23272a;
+}
+
+.app-layout.dark .confirm-dialog-delete {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.app-layout.dark .confirm-dialog-delete:hover {
+  background: #c0392b;
+}
