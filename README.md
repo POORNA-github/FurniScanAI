@@ -198,10 +198,17 @@ We love contributions! Here’s how you can help make this project even better:
 
 Thanks to everyone who has contributed to FurniScan AI❤️!
 
-| [<img src="https://github.com/POORNA-github.png" width="50"/>](https://github.com/POORNA-github) | [<img src="https://github.com/Disira.png" width="50"/>](https://github.com/Disira) |
-|:---:|:---:|
-| [POORNA-github](https://github.com/POORNA-github) | [Disira](https://github.com/Disira) |
+## 🏆 Contributors
 
+<p align="center">
+  <a href="https://github.com/POORNA-github">
+    <img src="https://github.com/POORNA-github.png" width="60" alt="POORNA-github"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/Disira">
+    <img src="https://github.com/Disira.png" width="60" alt="Disira"/>
+  </a>
+</p>
 ---
 
 ## 🙏 Acknowledgements
