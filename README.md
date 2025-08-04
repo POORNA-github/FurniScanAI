@@ -139,5 +139,71 @@ flowchart TD
     style C fill:#bbf,stroke:#333,stroke-width:2px
     style F fill:#bfb,stroke:#333,stroke-width:2px
     style G fill:#ffb,stroke:#333,stroke-width:2px
+```
+---
+
+## 🤝 Contributing
+
+We love contributions! Here’s how you can help make this project even better:
+
+### 🌟 Ways to Contribute
+
+- 🐛 **Bug Reports:** Found an issue? [Open a bug report](https://github.com/POORNA-github/FurniScanAI/issues)
+- ✨ **Feature Requests:** Have an idea? [Suggest a feature](https://github.com/POORNA-github/FurniScanAI/issues)
+- 📖 **Documentation:** Improve docs, add examples, fix typos
+- 🎨 **UI/UX:** Enhance design, improve accessibility
+- 🧠 **AI Models:** Help improve detection accuracy
+- 🌍 **Translations:** Add support for more languages
+
+---
+
+### 🚀 Development Process
+
+1. 🍴 **Fork the Repository**
+
+    ```bash
+    git clone https://github.com/POORNA-github/FurniScanAI.git
+    ```
+
+2. 🌿 **Create a Feature Branch**
+
+    ```bash
+    git checkout -b feature/amazing-new-feature
+    ```
+
+3. 💻 **Make Your Changes**
+    - Follow the existing code style
+    - Add tests if applicable
+    - Update documentation
+
+4. ✅ **Test Your Changes**
+
+    ```bash
+    npm start      # Test locally
+    npm run build  # Verify production build
+    npm run lint   # Check code quality
+    ```
+
+5. 📝 **Commit Your Changes**
+
+    ```bash
+    git commit -m "✨ Add amazing new feature"
+    ```
+
+6. 🚀 **Push and Create PR**
+
+    ```bash
+    git push origin feature/amazing-new-feature
+    ```
+    - Open a Pull Request on GitHub
+
+---
+
+### 📋 Development Guidelines
+
+- **Code Style:** Follow existing patterns and ESLint rules
+- **Commits:** Use [conventional commit messages](https://www.conventionalcommits.org/)
+- **Documentation:** Update README and inline docs
+- **Testing:** Verify functionality before submitting
 
 ---
