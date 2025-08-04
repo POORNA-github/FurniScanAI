@@ -1,51 +1,70 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+<p align="center">
+  <img src="public/furniscan-logo.png" alt="FurniScan Logo" width="120" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">🪑 FurniScan AI</h1>
+<p align="center">
+  <b>AI-powered Wooden Furniture Damage Detection & Reporting</b><br>
+  <i>Scan, detect, and report wooden furniture damages in seconds!</i>
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="https://your-vercel-app-url.vercel.app"><img src="https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=vercel" alt="Live Demo"></a>
+  <a href="https://github.com/POORNA-github/FurniScanAI"><img src="https://img.shields.io/github/stars/POORNA-github/FurniScanAI?style=flat-square" alt="GitHub stars"></a>
+  <a href="https://github.com/POORNA-github/FurniScanAI/issues"><img src="https://img.shields.io/github/issues/POORNA-github/FurniScanAI?style=flat-square" alt="GitHub issues"></a>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**FurniScan AI** is a cutting-edge web application that leverages AI to detect and report damages in wooden furniture from images. Whether you're a furniture manufacturer, seller, or just want to assess your own furniture, FurniScan makes it effortless and accurate.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔍 **AI-Powered Damage Detection**  
+  Instantly detect scratches, cracks, and other damages in wooden furniture using advanced computer vision.
 
-### `npm run build`
+- 🖼️ **Easy Image Upload**  
+  Upload photos of your furniture and get instant analysis.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 📄 **Automated Damage Reports**  
+  Generate downloadable PDF reports with detected damages and recommendations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 💬 **Chatbot Assistant**  
+  Get real-time support and answers to your questions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 📊 **History & Insights**  
+  View previous scans and track damage trends over time.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🖼️ Screenshots
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="center">
+  <img src="screenshots/demo1.png" alt="FurniScan Demo" width="700"/>
+  <br>
+  <img src="screenshots/demo2.png" alt="Damage Detection Example" width="700"/>
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend:** React, TypeScript, CSS
+- **AI Model:** Roboflow API
+- **PDF Generation:** jsPDF
+- **Deployment:** Vercel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-=======
-# FurniScanAI
-AI powered wooden furniture damage detection
->>>>>>> 5c4ccc5eef18e20e922b0c8036c9e8b5d8a01115
+## 🚦 Quick Start
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/POORNA-github/FurniScanAI.git
+cd FurniScanAI
